@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="C:\Users\Dan Andrei\Desktop\Calculator\Calculator\Calculator.css">
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    
+    <script src="C:\Users\Dan Andrei\Desktop\Calculator\Calculator\Calc.js"></script>
+    
+</head>
+<body>
+    
+<div id="calc">
+    <div id="display">
+        <label id="displayWhenFct"></label><br><br>
+        <label id="displayLabel">0</label>
+    </div>
+    
+   <div id="rand1">
+        <button type="button" value="x^3" class="btnOp" onclick="operatie1Element('x^3')"><img src="poze/x_la_3.jpg" style="width:69%; length:69%"></button>
+        <button type="button" value="rad" class="btnOp" onclick="operatie1Element('rad')">Rad</button>
+        <button type="button" value="x^2" class="btnOp" onclick="operatie1Element('x^2')"><img src="poze/x_la_2.jpg" style="width:69%; length:69%"></button>
+        <button type="button" value="1/x" class="btnOp" onclick="operatie1Element('1/x')">1/x</button>       
+    </div>
+    
+    <div id="rand2">
+        <button type="button" value="ce" class="btnOp" onclick="operatie1Element('ce')">CE</button>
+        <button type="button" value="c" class="btnOp" onclick="operatie1Element('c')">C</button>
+        <button type="button" value="del" class="btnOp" onclick="operatie1Element('del')">DEL</button>
+        <button type="button" value=":" class="btnOp" onclick="operatie(':')"><b>:</b></button> 
+    </div>
+    
+    <div id="rand3">
+        <button type="button" value="7" class="text" onclick="clickText('7')">7</button>
+        <button type="button" value="8" class="text" onclick="clickText('8')">8</button>
+        <button type="button" value="9" class="text" onclick="clickText('9')">9</button>
+        <button type="button" value="x" class="btnOp" onclick="operatie('x')">x</button> 
+    </div>
+    
+    <div id="rand4">
+        <button type="button" value="4" class="text" onclick="clickText('4')">4</button>
+        <button type="button" value="5" class="text" onclick="clickText('5')">5</button>
+        <button type="button" value="6" class="text" onclick="clickText('6')">6</button>
+        <button type="button" value="-" class="btnOp" onclick="operatie('-')">-</button>
+    </div>
+    
+    <div id="rand5">
+        <button type="button" value="1" class="text" onclick="clickText('1')">1</button>
+        <button type="button" value="2" class="text" onclick="clickText('2')">2</button>
+        <button type="button" value="3" class="text" onclick="clickText('3')">3</button>
+        <button type="button" value="+" class="btnOp" onclick="operatie('+')">+</button>
+    </div>
+    
+    <div id="rand6">
+        <button type="button" value="+/-" class="text" onclick="clickPctOrSign('+/-')">+/-</button>
+        <button type="button" value="0" class="text" onclick="clickText('0')">0</button>
+        <button type="button" value="." class="text" onclick="clickPctOrSign('.')"><b>.</b></button>
+        <button type="button" value="=" class="btnOp" onclick="operatie('=')">=</button>
+    </div>
+</div>
+    
+</body>    
+</html>
